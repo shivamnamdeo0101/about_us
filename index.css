@@ -1,0 +1,80 @@
+
+/*******************About us *************/
+.about_us{
+	margin: 1rem;
+	
+	font-family: "Raleway";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.grid_comp{
+	width: 80vw;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	padding: 1rem;
+	align-items: flex-start;
+	justify-items: center;
+
+}
+.grid_comp_img{
+	display: flex;
+	justify-content: center;
+}
+.grid_comp_img>img{
+	width:16rem;
+
+}
+.grid_comp_data>h1{
+	font-weight: 800;
+	text-align: center;
+}
+.grid_comp_data>p{
+	font-size: 1.5rem;
+	font-weight:300;
+}
+
+
+/***********our_leadership ***************/
+
+.our_leadership{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Raleway';
+}
+
+.our_leadership>h1{
+	text-align: center;
+}
+.our_leadership>h2{
+	text-align: center;
+	font-weight:400;
+}
+
+.our_leadership_grid{
+	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+	padding: 1rem;
+	justify-items: center;
+	
+
+}
+.our_leadership_grid_comp{
+	text-align: center;
+}
+.our_leadership_grid_comp>img{
+	width: 150px;
+}
+
+@media(max-width: 360px){
+	.our_leadership_grid{
+		
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+		padding: 1rem;
+		justify-items: center;
+
+	}	
+}
